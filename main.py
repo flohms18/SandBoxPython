@@ -1,12 +1,16 @@
 import random as rd 
 
-def main():
-    MyDicto = {}
-    for i in range (1,100):
-        MyDicto[i] = {
-            "User" : rd.randint(1,100),
-            "Name" : rd.randint(1,100)
-        }
-        print(MyDicto[i]["User"])
+class Car :
+    def __init__(self,brand,model,year):
+        self.brand = brand
+        self.model = model,
+        self.year = year
+    
+    def GetCarBrand(self):
+        return self.brand
+    def SetCarBrand(self, x):
+        self.Brand = x
 
-main()
+
+Clio = Car("Renault","Clio",2004)
+print(Clio.GetCarBrand())
